@@ -14,6 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Admin route
+
 
 //Front route
 Route::get('/home', 'HomeController@index');
+Route::get('/login', 'SessionController@index');
+Route::get('/register', 'RegisterController@index');
+Route::get('/shop', 'ShopController@index');
+Route::get('/contact', 'ContactController@index');
+Route::get('/about', 'AboutController@index');
