@@ -4,13 +4,11 @@
 body {
 
 }
-
 h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: black;
     opacity: .8;
     font-family: 'Mali', cursive;
 }
-
 p {
     font-family: 'Quicksand', cursive;
     color: white;
@@ -18,10 +16,10 @@ p {
     margin-bottom: 0.8rem;
     line-height: .8;
 }
- hr {
+.main-hr {
      background-color: white;
      opacity: .3;
- }
+}
 .container-footer {
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -30,16 +28,13 @@ p {
 /* navbar */
 .navbar {
     background: rgba(0, 0, 0, 0.5) !important;
-    padding: 1.2rem;
 }
 .navbar-brand {
     font-size: 1.5rem;
 }
-
 .navbar-brand h3:hover {
     color: lightpink !important;
 }
-
 .navbar-nav {
     /* padding-top: 0.4rem; */
 }
@@ -47,18 +42,15 @@ p {
     padding: 0;
     margin: auto 1rem;
 }
-
 .nav-link {
     font-family: 'Quicksand', cursive;
     color: white !important;
     opacity: .8;
 }
-
 .nav-item a:hover {
     color: lightpink !important;
     /* font-weight: bold; */
 }
-
 .nav-item a:focus {
     color: lightpink !important;
     opacity: 1;
@@ -105,7 +97,6 @@ p {
     -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
     animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
 }
-
 @-webkit-keyframes burger-hover {
     0% {
     width: 100%;
@@ -117,7 +108,6 @@ p {
     width: 100%;
     }
 }
-
 @keyframes burger-hover {
     0% {
     width: 100%;
@@ -141,7 +131,6 @@ p {
     width: 100vw;
     height: 100vh;
 }
-
 .main-h1 {
     text-align: center;
     padding-top: 40vh;
@@ -152,11 +141,9 @@ p {
 .icon-fb:hover {
     color: lightpink !important;
 }
-
 .icon-tw:hover {
     color: lightpink !important;
 }
-
 .icon-in:hover {
     color: lightpink !important;
 }

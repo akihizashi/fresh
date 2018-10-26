@@ -1,4 +1,4 @@
-<div class="container-fluid container-footer fixed-bottom">
+<div class="container-fluid container-footer fixed-bottom" style="background-color:black !important;">
   <div class="row pt-3">
     <div class="col-sm-6 col-md-3 text-left">
       <h6 class="text-light">Fresh fruit shop</h6>
