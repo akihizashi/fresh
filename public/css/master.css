@@ -1,35 +1,156 @@
+/* general setting */
+@import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+body {
+
+}
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    opacity: .8;
+    font-family: 'Mali', cursive;
+}
+p {
+    font-family: 'Quicksand', cursive;
+    color: white;
+    font-size: 11px;
+    margin-bottom: 0.8rem;
+    line-height: .8;
+}
+.main-hr {
+     background-color: white;
+     opacity: .3;
+}
+.container-footer {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* end general setting */
+
+/* navbar */
 .navbar {
     background: rgba(0, 0, 0, 0.5) !important;
-    padding: 1.2rem;
 }
 .navbar-brand {
     font-size: 1.5rem;
 }
-
-.navbar-brand:hover {
-    color: lightblue !important;
+.navbar-brand h3:hover {
+    color: lightpink !important;
 }
-
 .navbar-nav {
-    padding-top: 0.4rem;
+    /* padding-top: 0.4rem; */
 }
 .nav-item {
     padding: 0;
     margin: auto 1rem;
 }
-
 .nav-link {
+    font-family: 'Quicksand', cursive;
     color: white !important;
     opacity: .8;
 }
-
 .nav-item a:hover {
-    color: lightblue !important;
+    color: lightpink !important;
     /* font-weight: bold; */
 }
-
 .nav-item a:focus {
-    color: lightblue !important;
+    color: lightpink !important;
     opacity: 1;
 }
+/* end navbar */
+
 /* menu button */
+.hamburger {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.5rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.hamburger div {
+    align-self: flex-end;
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+.hamburger .meat {
+    width: 75%;
+    transition: all 200ms ease-in-out;
+}
+.hamburger .bottom-bun {
+    width: 50%;
+    transition: all 400ms ease-in-out;
+}
+.hamburger:hover div {
+    width: 100%;
+    background-color: lightpink;
+}
+.hamburger:hover .top-bun {
+    -webkit-animation: burger-hover 1s infinite ease-in-out alternate;
+    animation: burger-hover 1s infinite ease-in-out alternate;
+}
+.hamburger:hover .meat {
+    -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
+    animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
+}
+.hamburger:hover .bottom-bun {
+    -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
+    animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
+}
+@-webkit-keyframes burger-hover {
+    0% {
+    width: 100%;
+    }
+    50% {
+    width: 50%;
+    }
+    100% {
+    width: 100%;
+    }
+}
+@keyframes burger-hover {
+    0% {
+    width: 100%;
+    }
+    50% {
+    width: 50%;
+    }
+    100% {
+    width: 100%;
+    }
+}
+/* end menu button  */
+
+/* main page */
+.main-image {
+    background-image: url(/storage/images/banner2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.main-h1 {
+    text-align: center;
+    padding-top: 40vh;
+}
+/* end main page */
+
+/* SNS button */
+.icon-fb:hover {
+    color: lightpink !important;
+}
+.icon-tw:hover {
+    color: lightpink !important;
+}
+.icon-in:hover {
+    color: lightpink !important;
+}
+/* end SNS button */
+
+@media (min-width:992px) {
+    .hamburger {
+        display: none;
+    }
+}

@@ -1,5 +1,8 @@
 @extends('layouts.master')
 @include('layouts.navbar')
 @section('content')
-    <img src="/storage/images/banner.jpg" alt="" class="img-fluid">
+    <div class="main-image">
+        <h1 class="main-h1 text-light">welcome fresh fruit</h1>
+        @include('layouts.footer')
+    </div>
 @endsection

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-2 pb-2">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top  pt-2 pb-2" style="background-color:black !important;">
     <a class="navbar-brand" href="/home"><h3 class="text-light">Fresh fruit</h3></a>
     <div class="hamburger" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <div class="top-bun"></div>
