@@ -12,16 +12,16 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Quicksand', cursive;
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 0.8rem;
-    line-height: .8;
+    /* line-height: .8; */
 }
 .main-hr {
     background-color: white;
     opacity: .3;
 }
 .page-title {
-    
+
 }
 .container-footer {
     background-color: rgba(0, 0, 0, 0.4);
@@ -160,6 +160,38 @@ p {
 }
 /* end feather-icon */
 
+/* video test */
+* { box-sizing: border-box; }
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+    .vid-info { width: 50%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym { display: none; }
+}
+/* end video test */
 @media (min-width:992px) {
     .hamburger {
         display: none;

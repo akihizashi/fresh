@@ -1,8 +1,8 @@
 <div class="container-fluid container-footer fixed-bottom">
   <div class="row pt-3">
-    <div class="col-sm-6 col-md-9 text-left">
+    <div class="col-sm-6 col-md-8 text-left">
     </div>
-    <div class="col-sm-6 col-md-3 text-right">
+    <div class="col-sm-6 col-md-4 text-right">
         <h6 class="text-light">Fresh fruit shop</h6>
         <hr class="main-hr">
         <p class="mb-0">
