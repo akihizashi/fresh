@@ -12,16 +12,20 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Quicksand', cursive;
     color: white;
-    font-size: 11px;
+    font-size: 12px;
     margin-bottom: 0.8rem;
     line-height: .8;
 }
 .main-hr {
-     background-color: white;
-     opacity: .3;
+    background-color: white;
+    opacity: .3;
+}
+.page-title {
+    
 }
 .container-footer {
     background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
 }
 /* end general setting */
 
@@ -43,7 +47,7 @@ p {
     margin: auto 1rem;
 }
 .nav-link {
-    font-family: 'Quicksand', cursive;
+    font-family: 'Mali', cursive;
     color: white !important;
     opacity: .8;
 }
@@ -148,6 +152,13 @@ p {
     color: lightpink !important;
 }
 /* end SNS button */
+
+/* feather-icon size */
+.feather {
+    width: 14px;
+    height: 14px
+}
+/* end feather-icon */
 
 @media (min-width:992px) {
     .hamburger {
