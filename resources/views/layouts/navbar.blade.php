@@ -5,7 +5,6 @@
         <div class="meat"></div>
         <div class="bottom-bun"></div>
     </div>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -21,5 +20,12 @@
                 <a class="nav-link" href="/about">About</a>
             </li>
         </ul>
+        <div class="form-inline mx-3 my-2 my-lg-0">
+            <p>
+                <a class="text-light" href="/login"><i class="icon-general" data-feather="user-check"></i>Login</a>
+                <span class="text-light mx-1">Or</span>
+                <a class="text-light" href="#"><i class="icon-general" data-feather="user-plus"></i>Sign up</a>
+            </p>
+        </div>
     </div>
 </nav>

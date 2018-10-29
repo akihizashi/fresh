@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-family: 'Quicksand', cursive;
-    color: white;
+    color: #888;
     font-size: 11px;
     margin-bottom: 0.8rem;
     /* line-height: .8; */
@@ -142,13 +142,7 @@ p {
 /* end main page */
 
 /* SNS button */
-.icon-fb:hover {
-    color: lightpink !important;
-}
-.icon-tw:hover {
-    color: lightpink !important;
-}
-.icon-in:hover {
+.icon-general:hover {
     color: lightpink !important;
 }
 /* end SNS button */

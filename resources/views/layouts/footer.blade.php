@@ -17,13 +17,13 @@
       <p>
           Copyright 2018
           <a class="text-light" href="#">
-              <i class="ml-2 mr-2 mt-0 icon-fb" data-feather="facebook"></i>
+              <i class="ml-2 mr-2 mt-0 icon-general" data-feather="facebook"></i>
           </a>
           <a class="text-light" href="#">
-              <i class="ml-2 mr-2 mt-0 icon-tw" data-feather="twitter"></i>
+              <i class="ml-2 mr-2 mt-0 icon-general" data-feather="twitter"></i>
           </a>
           <a class="text-light" href="#">
-              <i class="ml-2 mr-2 mt-0 icon-in" data-feather="instagram"></i>
+              <i class="ml-2 mr-2 mt-0 icon-general" data-feather="instagram"></i>
           </a>
       </p>
   </div>
