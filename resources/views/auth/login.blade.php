@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-  <div class="container w-25 mt-5 pt-5">
+  <div class="col-lg-3 col-md-4 col-xs-6 col mx-auto acc-panel">
     <h2 class="text-center py-3">Fresh fruit</h2>
     @include('layouts.status')
     @include('layouts.create_error')
@@ -20,7 +20,11 @@
         <input type="password" name="password" class="form-control" id="" placeholder="Enter password" required>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block my-3">Login to start App</button>
+        <p>
+            <button type="submit" class="btn btn-general btn-block my-3">
+                <span class="small">Login to Fresh fruit</span>
+            </button>
+        </p>
       </div>
     </form>
     <p class="text-center">If you don't have account, click here to <a href="/register" type="" class="">Sign up</a></p>

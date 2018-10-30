@@ -11,16 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 //Admin route
-
 
 //Front route
 Route::get('/home', 'HomeController@index');
 Route::get('/login', 'SessionController@index');
-Route::get('/register', 'RegisterController@index');
+Route::post('/login', 'SessionController@store');
+Route::get('/logout', 'SessionController@destroy');
+Route::get('/register', 'RegistrationController@index');
+Route::post('/register', 'RegistrationController@store');
 Route::get('/shop', 'ShopController@index');
 Route::get('/contact', 'ContactController@index');
 Route::get('/about', 'AboutController@index');

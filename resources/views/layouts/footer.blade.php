@@ -5,7 +5,7 @@
     <div class="col-sm-6 col-md-4 text-right">
         <h6 class="text-light">Fresh fruit shop</h6>
         <hr class="main-hr">
-        <p class="mb-0">
+        <p class="text-light mb-0">
             <i data-feather="home"></i> 123-0000 example andress
             <i data-feather="phone"></i> 987-000-0000
             <i data-feather="mail"></i> example@email.com

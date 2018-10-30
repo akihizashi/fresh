@@ -1,6 +1,6 @@
 /* general setting */
 @import url('https://fonts.googleapis.com/css?family=Mali');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
 body {
 
 }
@@ -27,8 +27,17 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 0;
 }
+.btn-general:hover {
+    background-color: lightpink;
+    color: white;
+}
 /* end general setting */
 
+/* acc-pannel setting */
+.acc-panel {
+    margin-top: 25vh;
+}
+/* end acc-pannel setting */
 /* navbar */
 .navbar {
     background: rgba(0, 0, 0, 0.5) !important;
