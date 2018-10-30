@@ -18,7 +18,7 @@ class SessionController extends Controller
               'message' => 'Your infomation you fill invalid, please check a gain'
             ]);
         }
-        return redirect()->back();
+        return redirect('/home');
     }
 
     public function destroy()
