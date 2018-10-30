@@ -5,7 +5,7 @@
     <div class="col-sm-6 col-md-4 text-right">
         <h6 class="text-light">Fresh fruit shop</h6>
         <hr class="main-hr">
-        <p class="mb-0">
+        <p class="text-light mb-0">
             <i data-feather="home"></i> 123-0000 example andress
             <i data-feather="phone"></i> 987-000-0000
             <i data-feather="mail"></i> example@email.com
@@ -17,13 +17,13 @@
       <p>
           Copyright 2018
           <a class="text-light" href="#">
-              <i class="ml-2 mr-2 mt-0 icon-fb" data-feather="facebook"></i>
+              <i class="ml-2 mr-2 mt-0 icon-general" data-feather="facebook"></i>
           </a>
           <a class="text-light" href="#">
-              <i class="ml-2 mr-2 mt-0 icon-tw" data-feather="twitter"></i>
+              <i class="ml-2 mr-2 mt-0 icon-general" data-feather="twitter"></i>
           </a>
           <a class="text-light" href="#">
-              <i class="ml-2 mr-2 mt-0 icon-in" data-feather="instagram"></i>
+              <i class="ml-2 mr-2 mt-0 icon-general" data-feather="instagram"></i>
           </a>
       </p>
   </div>

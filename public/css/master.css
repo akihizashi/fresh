@@ -1,6 +1,6 @@
 /* general setting */
 @import url('https://fonts.googleapis.com/css?family=Mali');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
 body {
 
 }
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     font-family: 'Quicksand', cursive;
-    color: white;
+    color: #888;
     font-size: 11px;
     margin-bottom: 0.8rem;
     /* line-height: .8; */
@@ -27,8 +27,17 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 0;
 }
+.btn-general:hover {
+    background-color: lightpink;
+    color: white;
+}
 /* end general setting */
 
+/* acc-pannel setting */
+.acc-panel {
+    margin-top: 25vh;
+}
+/* end acc-pannel setting */
 /* navbar */
 .navbar {
     background: rgba(0, 0, 0, 0.5) !important;
@@ -142,13 +151,7 @@ p {
 /* end main page */
 
 /* SNS button */
-.icon-fb:hover {
-    color: lightpink !important;
-}
-.icon-tw:hover {
-    color: lightpink !important;
-}
-.icon-in:hover {
+.icon-general:hover {
     color: lightpink !important;
 }
 /* end SNS button */

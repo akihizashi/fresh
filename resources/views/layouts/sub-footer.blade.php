@@ -12,7 +12,7 @@
   </div>
   <div class="text-center">
       <hr class="main-hr">
-      <p class="mb-0 pb-4">
+      <p class="text-light mb-0">
           Copyright 2018
           <a class="text-light" href="#">
               <i class="ml-2 mr-2 mt-0 icon-fb" data-feather="facebook"></i>
