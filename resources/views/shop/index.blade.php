@@ -10,14 +10,13 @@
             <div class="card my-2">
               <img class="card-img" src="/storage/product_images/{{ $product->image }}" alt="">
               <div class="card-body">
-                  <a class="text-dark" href="/shops/{{ $product->id }}"><h5 class="my-0">{{ $product->name }}</h5></a>
-                  @if ($product->category == 'CD')
-                    <span class="badge badge-primary" style="width:4rem;">{{ $product->category }}</span>
-                  @elseif ($product->category == 'DVD')
-                    <span class="badge badge-info" style="width:4rem;">{{ $product->category }}</span>
-                  @elseif ($product->category == 'Album')
-                    <span class="badge badge-secondary" style="width:4rem;">{{ $product->category }}</span>
-                  @endif
+                <a class="text-dark" href="/shop/{{ $product->id }}"><h5 class="my-0">{{ $product->name }}</h5>
+                </a>
+                    @if ($product->category == 'piece')
+                        <span class="badge badge-primary" style="width:4rem;">{{ $product->category }}</span>
+                    @else
+                        <span class="badge badge-warning" style="width:4rem;">{{ $product->category }}</span>
+                    @endif
                 <p class="card-text"><small class="text-muted">Release: {{ date('Y/m/d', strtotime($product->release)) }}</small></p>
               </div>
               <div class="card-footer">

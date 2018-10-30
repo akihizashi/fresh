@@ -24,5 +24,6 @@ Route::get('/logout', 'SessionController@destroy');
 Route::get('/register', 'RegistrationController@index');
 Route::post('/register', 'RegistrationController@store');
 Route::get('/shop', 'ShopController@index');
+Route::get('/shop/{product}', 'ShopController@show');
 Route::get('/contact', 'ContactController@index');
 Route::get('/about', 'AboutController@index');
