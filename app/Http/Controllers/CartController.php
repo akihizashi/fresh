@@ -27,7 +27,6 @@ class CartController extends Controller
 
     public function add(Request $request)
     {
-
       $cartItems = session('cart');
       $productInfoToCart = array(
         "id" => request('id'),
@@ -38,17 +37,14 @@ class CartController extends Controller
       );
       if ($cartItems !== null){
         if (array_search(request('id'), array_column($cartItems, 'id')) !== false) {
-          return redirect ('/cart')->with('status', 'Product exists, you can change quantity before payment');
+          return redirect ('/cart')->with('status', '商品は存在します');
         }
         $request->session()->push('cart', $productInfoToCart);
-        $request->session()->flash('status', 'Product added to cart');
-
+        $request->session()->flash('status', 'カートに追加されました。');
         return redirect('/cart');
-
       }
         $request->session()->push('cart', $productInfoToCart);
-        $request->session()->flash('status', 'Product added to cart');
-
+        $request->session()->flash('status', 'カートに追加されました。');
         return redirect('/cart');
     }
 
@@ -59,12 +55,10 @@ class CartController extends Controller
         unset($cartItems[$key]);
         $newCartItems = array_values($cartItems);
         session()->put('cart', $newCartItems);
-
         if(session('cart') == null){
           session()->forget('cart');
         }
-
-        return redirect('/cart')->with('status', 'Item deleted');
+        return redirect('/cart')->with('status', '商品を削除されました。');
     }
 
     public function update(Request $request)
@@ -74,17 +68,15 @@ class CartController extends Controller
          if ($cartItem['id'] == request('id')) {
            $cartItems[$key]['quantity'] = request('quantity');
          }
-
        }
        $request->session()->put('cart', $cartItems);
-       return redirect('/cart')->with('status', 'Cart updated');
+       return redirect('/cart')->with('status', 'カートを更新されました。');
     }
 
     public function clear(Request $request)
     {
       $request->session()->forget('cart');
-
-      return redirect('/cart')->with('status', 'Cart cleared');
+      return redirect('/cart')->with('status', 'カートを削除されました。');
     }
 
     public function confirm()
@@ -120,9 +112,9 @@ class CartController extends Controller
         }
         $request->session()->forget('cart');
 
-        return redirect('/cart')->with('status', 'Your order was done');
+        return redirect('/cart')->with('status', 'ご注文を完了です。');
       } else {
-        return redirect('/login')->with('status', 'You have to login to do next step');
+        return redirect('/login')->with('status', 'ログインで進みます。');
       }
     }
 
