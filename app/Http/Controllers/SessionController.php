@@ -15,7 +15,7 @@ class SessionController extends Controller
     {
         if (!auth()->attempt(request(['email', 'password']))) {
             return back()->withErrors([
-              'message' => 'Your infomation you fill invalid, please check a gain'
+              'message' => 'Your infomation you fill invalid, please check again'
             ]);
         }
         return redirect('/home');

@@ -21,12 +21,23 @@
                 <a class="nav-link" href="/about">About</a>
             </li>
         </ul>
+        @if (Auth::check())
+            <div class="form-inline mx-3 my-2 my-lg-0">
+                <p>
+                    <a class="text-light" href="/profile">
+                        <i class="icon-general" data-feather="user"></i>
+                        <span class="mb-0">Hi {{ Auth::user()->name }}</span>
+                    </a>
+                </p>
+            </div>
+        @else
         <div class="form-inline mx-3 my-2 my-lg-0">
             <p>
                 <a class="text-light" href="/login"><i class="icon-general" data-feather="user-check"></i>Login</a>
                 <span class="text-light mx-1">Or</span>
-                <a class="text-light" href="#"><i class="icon-general" data-feather="user-plus"></i>Sign up</a>
+                <a class="text-light" href="/register"><i class="icon-general" data-feather="user-plus"></i>Sign up</a>
             </p>
         </div>
+        @endif
     </div>
 </nav>
