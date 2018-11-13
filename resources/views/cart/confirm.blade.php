@@ -31,9 +31,9 @@
                 </div>
                 <div class="text-right">
                     <a href="/cart">
-                        <button class="btn btn-warning btn-sm" type="button">修正</button>
+                        <button class="btn btn-danger btn-sm" type="button">修正</button>
                     </a>
-                    <button class="btn btn-success btn-sm" type="submit">注文に進む</button>
+                    <button class="btn btn-primary btn-sm" type="submit">注文に進む</button>
                 </div>
             @endif
         </form>

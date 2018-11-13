@@ -33,4 +33,6 @@ Route::post('/cart/clear', 'CartController@clear');
 Route::get('/cart/confirm', 'CartController@confirm');
 Route::post('/cart/pay', 'CartController@store');
 Route::get('/contact', 'ContactController@index');
+Route::get('/contact/confirm', 'ContactController@confirm');
+Route::post('/contact/store', 'ContactController@store');
 Route::get('/about', 'AboutController@index');
