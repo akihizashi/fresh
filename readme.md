@@ -1,19 +1,6 @@
-## Month 1:
-## Create database
-    DATABASE 名： fresh
-    CREATE DATABASE fresh default charset utf8;
-    - freshフォルダからCommandPromtを起動、この下のコマンドを打ってください、
-        php artisan db:seed --class=ShopsTableSeeder
-## アプリ起動
-    - freshフォルダをC:/xampp/htdocsの中にコピー
-    - freshフォルダからCommandPromtを起動
-        1. php artisan serveを打ち
-        2. freshフォルダから他のCommandPromtを起動, この下のコマンドを打ってください。
-            php artisan migrate
-    -アプリを起動出来る。ブラウザでlocalhost:8000/homeでアプリをアクセスする。
-
-## Month 2:
-    - アップデートカート機能
-
-## Month 3:
+## カートの機能アップデート
+    - C:\xampp\htdocs　にフォルダーをコピー、解凍してください。
+    - freshのフォルダーの中からCommando Prompt を起動、php artisan migrate を打ってください。このステップでデータベースをアップデートします。
+    - また、Commando Prompt で php artisan serve を打ってアプリを起動します。
+    - homepage URL: localhost:8000/home です。
 
