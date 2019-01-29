@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/home">Home</a>
+                <a class="nav-link" href="/home">トップページ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/shop">Shop</a>
+                <a class="nav-link" href="/shop">ショップ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact">問い合わせ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/about">会社紹介</a>
             </li>
         </ul>
         @if (Auth::check())
