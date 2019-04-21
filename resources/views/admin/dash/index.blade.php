@@ -2,5 +2,8 @@
 @section('content')
 
     Dash content
-    {{-- {{ dd(Request::url()) }} --}}
+    <br>
+    <div class="container-fluid">
+        {!!  $datas !!}
+    </div>
 @endsection

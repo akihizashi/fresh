@@ -39,10 +39,10 @@ class TestdbController extends Controller
     {
         if ($request->add) {
             // code...
-            // $file = public_path('/csv/bmi_100.csv');
-            // // dd($file);
+            $file = public_path('/csv/bmi_1000.csv');
             //
-            // $data = $this->csvToArray($file);
+            $data = $this->csvToArray($file);
+            // dd($data);
             // foreach ($data as $element) {
             //     $new_data[] = implode(",", $element);
             // }
@@ -55,10 +55,10 @@ class TestdbController extends Controller
             // }
             // dd($dataArr);
             $start = date('m-d-Y H:i:').(date('s')+fmod(microtime(true), 1));
-            for($i = 0; $i < 500; $i++) {
-                // DB::table('testdbs')->insert(['height' => 1, 'weight' => 1, 'label' => 1]);
-                DB::insert('insert into testdbs (height, weight, label) values(?, ?, ?)', [1, 1, 1]);
-            }
+            // for($i = 0; $i < 500; $i++) {
+                DB::table('testdbs')->insert($data);
+                // DB::insert('insert into testdbs (height, weight, label) values(?, ?, ?)', [1, 1, 1]);
+            // }
             $finish = date('m-d-Y H:i:').(date('s')+fmod(microtime(true), 1));
             $msg = 'done';
             return view('testdb', compact('msg', 'start', 'finish'));
